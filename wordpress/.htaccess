@@ -1,0 +1,14 @@
+Options +FollowSymLinks
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /~karen/GEM/wordpress/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /~karen/GEM/wordpress/index.php [L]
+</IfModule>
+
+php_value upload_max_filesize 50M
+php_value post_max_size 50M
+php_value max_execution_time 500
+php_value max_input_time 500

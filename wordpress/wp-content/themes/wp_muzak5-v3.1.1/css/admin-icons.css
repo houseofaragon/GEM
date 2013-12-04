@@ -1,0 +1,36 @@
+#menu-posts-cpt_slider .wp-menu-image {
+	background: url(../images/icon_slider.png) no-repeat 6px -17px !important;
+}
+#menu-posts-cpt_slider:hover .wp-menu-image, #menu-posts-cpt_slider.wp-has-current-submenu .wp-menu-image {
+	background-position:6px 7px!important;
+}
+#menu-posts-cpt_events .wp-menu-image {
+	background: url(../images/icon_events.png) no-repeat 6px -17px !important;
+}
+#menu-posts-cpt_events:hover .wp-menu-image, #menu-posts-cpt_events.wp-has-current-submenu .wp-menu-image {
+	background-position:6px 7px!important;
+}
+#menu-posts-cpt_discography .wp-menu-image {
+	background: url(../images/icon_discography.png) no-repeat 6px -17px !important;
+}
+#menu-posts-cpt_discography:hover .wp-menu-image, #menu-posts-cpt_discography.wp-has-current-submenu .wp-menu-image {
+	background-position:6px 7px!important;
+}
+#menu-posts-cpt_videos .wp-menu-image {
+	background: url(../images/icon_videos.png) no-repeat 6px -17px !important;
+}
+#menu-posts-cpt_videos:hover .wp-menu-image, #menu-posts-cpt_videos.wp-has-current-submenu .wp-menu-image {
+	background-position:6px 7px!important;
+}
+#menu-posts-cpt_galleries .wp-menu-image {
+	background: url(../images/icon_galleries.png) no-repeat 6px -17px !important;
+}
+#menu-posts-cpt_galleries:hover .wp-menu-image, #menu-posts-cpt_galleries.wp-has-current-submenu .wp-menu-image {
+	background-position:6px 7px!important;
+}
+#menu-posts-cpt_artists .wp-menu-image {
+	background: url(../images/icon_artists.png) no-repeat 6px -17px !important;
+}
+#menu-posts-cpt_artists:hover .wp-menu-image, #menu-posts-cpt_artists.wp-has-current-submenu .wp-menu-image {
+	background-position:6px 7px!important;
+}

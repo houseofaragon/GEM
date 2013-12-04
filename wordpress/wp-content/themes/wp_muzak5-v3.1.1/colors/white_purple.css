@@ -1,0 +1,214 @@
+/* GLOBAL: #Basic Styles
+================================================== */
+	#wrap { background: url(../images/bg_white.png) no-repeat top center; }
+	body { border-top:solid 5px #ff0089; border-bottom:solid 5px #ff0089; background: #fff; color: #333; }	
+
+/* GLOBAL: #Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6 { color: #333; }
+	#footer h3.widget-title	{ color:#333; }	
+	pre { background: #333; }
+	abbr, acronym, dfn { border-bottom: 1px dotted #666; }
+	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #333; font-style: italic; }
+	blockquote { border-left: 3px solid #333; }
+	blockquote cite { color: #555; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+
+/* GLOBAL: #Links
+================================================== */
+	a, a:visited { color: #ff0089; }
+	a:hover { color: #ff0089; border-bottom:dotted 1px #ccc; }
+
+
+/* GLOBAL: #Floats
+================================================== */
+	.alignleft { float:left; margin:5px 15px 15px 0; }
+	.alignright { float:right; margin:5px 0 15px 15px; }
+	.aligncenter { clear: both;	display: block;	margin-left: auto; margin-right: auto; }
+	
+
+/* GLOBAL: #Buttons
+================================================== */
+	.button,
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {
+		background: #eee; /* Old browsers */
+		background: #eee -moz-linear-gradient(top, rgba(255,255,255,.2) 0%, rgba(0,0,0,.2) 100%); /* FF3.6+ */
+		background: #eee -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.2)), color-stop(100%,rgba(0,0,0,.2))); /* Chrome,Safari4+ */
+		background: #eee -webkit-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Chrome10+,Safari5.1+ */
+		background: #eee -o-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Opera11.10+ */
+		background: #eee -ms-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* IE10+ */
+		background: #eee linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* W3C */
+	  border: 1px solid #aaa;
+	  border-top: 1px solid #ccc;
+	  border-left: 1px solid #ccc;
+	  color: #444;
+	 }
+
+	.button:hover,
+	button:hover,
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover {
+		color: #222;
+		background: #ddd; /* Old browsers */
+		background: #ddd -moz-linear-gradient(top, rgba(255,255,255,.3) 0%, rgba(0,0,0,.3) 100%); /* FF3.6+ */
+		background: #ddd -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.3)), color-stop(100%,rgba(0,0,0,.3))); /* Chrome,Safari4+ */
+		background: #ddd -webkit-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* Chrome10+,Safari5.1+ */
+		background: #ddd -o-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* Opera11.10+ */
+		background: #ddd -ms-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* IE10+ */
+		background: #ddd linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* W3C */
+	  border: 1px solid #888;
+	  border-top: 1px solid #aaa;
+	  border-left: 1px solid #aaa; }
+
+	.button:active,
+	button:active,
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active {
+		border: 1px solid #666;
+		background: #ccc; /* Old browsers */
+		background: #ccc -moz-linear-gradient(top, rgba(255,255,255,.35) 0%, rgba(10,10,10,.4) 100%); /* FF3.6+ */
+		background: #ccc -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.35)), color-stop(100%,rgba(10,10,10,.4))); /* Chrome,Safari4+ */
+		background: #ccc -webkit-linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* Chrome10+,Safari5.1+ */
+		background: #ccc -o-linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* Opera11.10+ */
+		background: #ccc -ms-linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* IE10+ */
+		background: #ccc linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* W3C */ }
+
+/* GLOBAL: #Forms
+================================================== */
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea
+	{
+		background: #f3f3f3; border:solid 1px #fcfcfc;
+		color: #333;
+		width: 210px;
+	}
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	textarea:focus {
+		background: #f3f3f3; border:solid 1px #fcfcfc;
+ 		color: #333;
+ 	}
+	label span,
+	legend span {
+		color: #444; }
+
+
+/* GLOBAL: #Header
+================================================== */
+	.section-title { background: #ff0089; color:#fff; }
+	.slide-text h2 { color:#fff; }
+	
+
+/* GLOBAL: #Footer
+================================================== */
+	#footer-wrap { background: url(../images/bg_footer_white.png) no-repeat bottom center; }
+	#footer { border-top:solid 5px #ff0089; }
+	
+
+/* GLOBAL: #Widgets
+================================================== */
+	.sub-head { color:#333; }
+	.main-head { color:#444; }
+
+	a.action-btn { color:#fff; }
+	a.action-btn:hover { color:#fff; }	
+	.action-btn.buy, .action-btn.view { background: url(../images/bg_btn.png) repeat-x 0 -125px; }				
+	.latest-item { border:solid 1px #f3f3f3; background: #fcfcfc; }	
+		
+	.widget ul li { border-bottom:dotted 1px #ccc; }
+	
+
+/* MODULE: #Main navigation
+================================================== */
+	.sf-menu a { color:#333; text-shadow: none }
+	.sf-menu li li { background: #ff0089; }
+	.sf-menu li li a { color:#fff; }
+	.sf-menu li:hover { background: #bd0066; }
+	.sf-menu > li > a:hover, .sf-menu > li.active a, .current-menu-item a, .current-menu-parent a { color:#ff0089; }	
+	
+
+/* MODULE: #Homepage slider
+================================================== */
+	.slide-text { background: #ff0089; }
+	.flex-control-paging li a.flex-active { background: #ff0089; }
+
+
+/* MODULE: #News
+================================================== */
+	.post { border-bottom:dotted 1px #ccc; }
+	.post-intro h2 a { background: #ff0089; color:#fff; }
+	.post-intro h2 a:hover { background: #000; color:#ff0089; }
+	.meta .post-date { color:#333; }
+
+
+/* MODULE: #Comments
+================================================== */
+	.post-comments { border-top:solid 5px #ff0089; }
+	.post-comments .comment-copy { background: #252525; border:solid 1px #2e2e2e; }
+	.comment-reply-link, .btn-reply { color:#fff; background: url(../images/bg_btn.png) repeat-x 0 -100px; line-height: 1; }
+	.comment-reply-link:hover, .btn-reply:hover { color:#fff; border:none; }
+
+
+/* MODULE: #Comment Form
+================================================== */
+	#form-wrapper { border-top:solid 5px #ff0089;  }
+
+
+/* MODULE: #Discography
+================================================== */
+	#meta-wrap { border-color:#f3f3f3; }
+	
+	/* tracklisting */
+	.tracklisting li { background: #fcfcfc; border:solid 1px #f3f3f3;  }
+	.tracklisting .track-no { background: #ff0089; color:#fff; }
+	.tracklisting .track-listen { background: url(../images/bg_speaker.png) no-repeat; }
+	.tracklisting a.sm2_button { background: url(../images/icon_playback.png) no-repeat; }
+	.tracklisting a.sm2_button.sm2_playing { background-position: 0 -30px; }
+	
+	/* share buttons */
+	#sharable { border-left:solid 1px #434343; border-left: solid 1px rgba(255,255,255,0.2); }
+
+
+/* MODULE: #Events
+================================================== */
+	#map, #map h3, #map h4, #map p { color:#232323; }
+	#map p { color:#555; }
+	
+	
+/* Paging Styles
+================================================== */
+	#paging a { border:solid 1px #f3f3f3; }
+	#paging a:hover { background: #ff0089; border:solid 1px #ff0089; color:#fff; }
+	#paging span.current, #paging .pages { background: #ff0089; border:solid 1px #ff0089; }
+	
+	
+/* WIDGET: #Tour Dates
+================================================== */
+	.widget .tour-dates li, .events .tour-dates li, .widget .tour-event .tour-group { background: #fcfcfc; border:solid 1px #f3f3f3; }
+	.tour-date { background: #ff0089; color:#fff; }
+
+
+/* WIDGET: #Latest Album
+================================================== */
+	#latest-album { border:solid 1px #f3f3f3;}
+	.album-info {  background: #fcfcfc; }
+	.album-release { color:#bebebe; }
+
+	
+/* WIDGET: #Latest Videos
+================================================== */
+	.latest-video a span { background: url(../images/btn_play.png) no-repeat; }
+
+
+/* WIDGET: #Flickr
+================================================== */
+	.flickr_badge_image { background: #f3f3f3; border:solid 1px #fcfcfc; }
