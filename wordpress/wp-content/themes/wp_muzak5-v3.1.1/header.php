@@ -27,7 +27,6 @@
 <?php get_template_part('inc_mobile_nav'); ?>
 
 <div id="wrap">
-	<div class="container">
 		
 		<!-- ########################### HEADER ########################### -->
 		<header id="header" class="group">
@@ -51,4 +50,6 @@
 				?>
 			</nav><!-- /nav -->
 
-		</header><!-- /header -->	
+		</header><!-- /header -->
+			<div class="container">
+	

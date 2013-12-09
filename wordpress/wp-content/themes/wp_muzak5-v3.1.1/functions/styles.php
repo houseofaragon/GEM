@@ -8,7 +8,7 @@ function ci_register_theme_styles()
 	// There is no need to register them conditionally, as the enqueueing can be conditional.
 	//
 
-	wp_register_style('google-font-lato', 'http://fonts.googleapis.com/css?family=Lato:400,900,400italic');
+	wp_register_style('google-font-open', 'http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic');
 	wp_register_style('ci-skeleton', get_child_or_parent_file_uri('/css/skeleton.css'));
 	wp_register_style('flexslider', get_child_or_parent_file_uri('/css/flexslider.css'));
 	wp_register_style('mediaqueries', get_child_or_parent_file_uri('/css/mediaqueries.css'));
@@ -16,7 +16,7 @@ function ci_register_theme_styles()
 	wp_register_style('jquery-ui-timepicker', get_child_or_parent_file_uri('/css/jquery-ui-timepicker-addon.css'));
 
 	wp_register_style('ci-style', get_stylesheet_uri(), array(
-		'google-font-lato',
+		'google-font-open',
 		'ci-skeleton'
 	), CI_THEME_VERSION, 'screen');
 		

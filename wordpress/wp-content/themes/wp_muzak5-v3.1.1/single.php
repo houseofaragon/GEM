@@ -11,8 +11,9 @@
 				<article <?php post_class('inner-post'); ?>>
 				
 					<div class="post-intro">
-						<?php the_post_thumbnail('ci_home_listing_long', array('class' => 'scale-with-grid')); ?>
 						<h2><a href="<?php the_permalink(); ?>" title="<?php echo __('Permalink to', 'ci_theme').' '.esc_attr(get_the_title()); ?>"><?php the_title(); ?></a></h2>							
+						<?php the_post_thumbnail('ci_home_listing_long', array('class' => 'scale-with-grid')); ?>
+
 					</div><!-- /intro -->
 		
 					<div class="post-body hyphenate group responsive-content">

@@ -1,14 +1,49 @@
 /*
-Theme Name: Muzak
-Theme URI: http://www.cssigniter.com/muzak2/
-Author: the CSSIgniterVIP team
-Author URI: http://www.cssigniter.com/
-Description: Music theme for WordPress, WooCommerce (2.0.x) Compatible
+Author: House of Aragon
+Author URI: http://www.karenaragon.com/
+Description: Customized Muzak Music theme for WordPress, WooCommerce (2.0.x) Compatible [www.cssigniter]
 Tags: black, three-columns, audio, band, dj, ecommerce, eshop, events, gallery, jwplayer, soundmanager2, music, photography, responsive, tour, video, woocommerce
 Version: 3.1.1
 License: GNU General Public License
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+
+/* TYPOGRAPHY IMPORT
+================================================== */
+@font-face {
+  font-family: 'Brandon Bold';
+  src:	local('fonts/Brandon')
+  		url('fonts/Brandon_bld.otf');
+
+  	font-family: Museo300;  
+	src: local('Museo300-Regular'), 
+		url("fonts/Museo300-Regular.ttf") format('truetype');  
+	font-weight: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Medium';
+  src:url('fonts/Brandon_med.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Medium Italic';
+  src:url('fonts/Brandon_med_it.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Thin';
+  src:url('fonts/Brandon_thin.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 /* GLOBAL: #Reset & Basics (Inspired by E. Meyers)
 ================================================== */
@@ -39,9 +74,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /* GLOBAL: #Basic Styles
 ================================================== */
 	body {
-		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font: 12px/21px "Open Sans", sans-serif;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
+		letter-spacing: 2px;
 	}	
 	.hidden { display:none; }
 	#wrap { position:relative; z-index:1000; }
@@ -49,14 +85,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 /* GLOBAL: #Typography
 ================================================== */
-	h1, h2, h3, h4, h5, h6 { font-family: 'Lato', sans-serif; font-weight: 900; }
+	h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', sans-serif; font-weight: 900; letter-spacing: 1letter-spacing: 2px;npx; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1 a { font-size: 15px;}
 	h1 { font-size: 30px; line-height: 34px; margin-bottom: 14px;}
 	h2 { font-size: 24px; line-height: 30px; margin-bottom: 10px; }		
 	h3 { font-size: 20px; line-height: 34px; margin-bottom: 8px; }
-	h3.widget-title { font-size:16px; line-height: 1; margin-bottom:15px; text-transform: uppercase; }
-	#footer h3.widget-title	{ font-size: 14px; line-height: 30px; margin-bottom: 4px; text-transform: uppercase; }
-	h3.section-title { font-size:30px; letter-spacing: -1px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); }	
+	h3.widget-title { font-size:12px; line-height: 1; margin-bottom:25px; text-transform: uppercase; padding: 10px;  }
+	#footer h3.widget-title	{ font-size: 14px; line-height: 20px; margin-bottom: 4px; text-transform: uppercase; }
+	h3.section-title { font-size:15px; letter-spacing: 1px; text-transform: uppercase; }	
 	h4 { font-size: 18px; line-height: 30px; margin-bottom: 4px; }	 
 	h5 { font-size: 16px; line-height: 24px; }
 	h6 { font-size: 14px; line-height: 21px; }
@@ -69,8 +106,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	strong { font-weight: bold; }
 	small { font-size: 80%; }
 
-	pre { font: 13px "Courier 10 Pitch", Courier, monospace; line-height: 1.5; margin-bottom: 15px; overflow: auto; padding: 0.75em 1.625em; }
-	code, kbd, samp, var { font: 13px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
+	pre { font: 13px Courier, monospace; line-height: 1.5; margin-bottom: 15px; overflow: auto; padding: 0.75em 1.625em; }
+	code, kbd, samp, var { font: 13px "Open Sans", "DejaVu Sans Mono", monospace; }
 	abbr, acronym, dfn { border-bottom: 1px dotted #666; cursor: help; }
 	address { display: block; margin: 0 0 1.625em; }
 	sup, sub { font-size: 10px; height: 0; line-height: 1; position: relative; vertical-align: baseline; }
@@ -109,7 +146,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	li p { line-height: 21px; }
 	.post-body ul { list-style: disc; margin-left:26px;  }
 	.post-body ol { list-style: decimal; }
-	
+	.post-body a span:hover{text-decoration: none; color:#fff; border: none; }
 
 /* GLOBAL: #Tables
 ================================================== */
@@ -145,7 +182,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	  margin-bottom: 20px;
 	  line-height: normal;
 	  padding: 8px 10px;
-	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+	  font-family: "Open Sans", "Josefin", sans-serif; }
 
 	.button.full-width,
 	button.full-width,
@@ -178,7 +215,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	{
 		padding: 6px 4px;
 		outline: none;
-		font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;		
+		font: 13px "Open Sans", "Josefin", Helvetica, Arial, sans-serif;		
 		margin: 0;
 		width: 210px;
 		max-width: 100%;
@@ -195,9 +232,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 /* GLOBAL: #Header
 ================================================== */
-	#header { padding-top:50px; }
+	#header { left: 10%; padding:30px 0px 0px 140px; background: #000;}
 	#logo a:hover { border:none; }
-	#navigation { position:absolute; top:45px; right:0; }
+	#navigation { position:absolute; top:35px; right:140px; }
 	.section-title { padding:12px 20px 15px 20px; margin:20px 10px 20px 10px; }
 	
 
@@ -218,13 +255,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 ================================================== */
 	#single-sidebar { margin-top:40px; }
 	.widget { margin-bottom:40px; }
+
 	.widget-img { display:block; }	
 	#footer .widget { margin-bottom:20px; }
 	#footer .widget p { margin-bottom:5px; }
 	.sub-head, .main-head { font-size:11px; line-height: 1; display:block; margin-bottom:5px;}
 	.main-head { font-weight:bold; }
 
-	a.action-btn { display:inline-block !important; height:15px; padding:0 5px 5px 5px; position:relative; top:5px; font-weight:bold; font-size:10px; text-transform: uppercase; text-shadow: 0 -1px 0 rgba(0,0,0,0.3); border-radius:1px; box-shadow:0 0 3px rgba(0,0,0,0.3); }
+	a.action-btn { font-style: italic;display:inline-block !important; height:15px; padding:0; position:relative; top:5px; font-weight:bold; font-size:10px; text-transform: uppercase; text-shadow: 0 -1px 0 rgba(0,0,0,0.3); border-radius:1px; box-shadow:0 0 3px rgba(0,0,0,0.3); }
 	.single-cpt_events a.action-btn { height:10px; padding:5px; }
 	a.action-btn:hover { border:none;  }
 	.action-btn.watch, .action-btn.listen { background: url(images/bg_btn.png) repeat-x; }
@@ -248,7 +286,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	.sf-menu ul li { width: 100%; }
 	.sf-menu li:hover { visibility: inherit; }
 	.sf-menu li { float: left; position: relative; text-decoration:none;  }
-	.sf-menu a { display: block; position: relative; font-size:13px; font-weight:bold; padding: 10px 10px; text-shadow: 0 1px 0 rgba(0,0,0,0.5); }
+	.sf-menu a { display: block; position: relative; font-size:11px; font-weight:bold; letter-spacing: 2px; padding: 10px 10px; text-shadow: 0 1px 0 rgba(0,0,0,0.5); }
 	.sf-menu li li a { font-size:12px; text-shadow: 0 -1px 0 rgba(0,0,0,0.6); }
 	.sf-menu a:hover { border:none; }
 	.sf-menu li:hover ul,.sf-menu li.sfHover ul { left: -1px; top: 39px; z-index: 99; }
@@ -270,7 +308,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
 /* MODULE: #Homepage slider
 ================================================== */
-	.slider { margin:20px 0 40px 0; }
+	.slider { margin: 0 0 40px 0; }
 	.slide-text { position:absolute; bottom:50px; right:50px; padding:15px 20px 10px 20px; }
 	.slide-text h2 { font-size:30px; letter-spacing: -1px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1; }
 	.video-slide .fluid-width-video-wrapper { margin-bottom:0; padding-bottom:0; }
@@ -414,8 +452,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	.tour-dates p { margin-bottom:0; }
 	.tour-date { float:left; width:60px; font-family: 'Lato', sans-serif; text-align: center; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); padding:10px 0; }
 	.tour-date .day, .tour-date .year { font-weight:900; display:block;  }
-	.tour-date .day, .tour-date .time { font-size:24px; }
-	.tour-date .year, .tour-date .date { font-size:14px; }
+	.tour-date .day, .tour-date .time { font-size:24px;  }
+	.tour-date .year, .tour-date .date { font-size:14px;  }
 	.tour-place { float:left; width:138px; padding:10px; }
 	.tour-date .date { display: block; font-weight: 900; }
 	.tour-date .time { display: block; font-weight: 900; font-size: 18px; }
@@ -427,14 +465,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	.widget .tour-event-thumb a { padding-bottom:0; display:block; }
 	.widget .tour-event-thumb img { display:block; }
 	.widget .tour-date { margin-bottom:0; }
-	
+
 
 /* MODULE: #Gallery
 ================================================== */	
 	.gallery-item a, .gallery-item a img { display:block; }	
 	.gallery-item a:hover img { opacity:0.8; }
 	.gallery-actions { padding:2px 0 5px 0; display:block; }
-	
 	
 /* WIDGET: #Latest Album
 ================================================== */
@@ -626,7 +663,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 #jPanelMenu-menu li.current_page_item > a,
 #jPanelMenu-menu li.current-menu-item > a:visited,
 #jPanelMenu-menu li.current_page_item > a:visited { background: #27292b; }
-
 
 /* #Isotope Filtering
 ================================================== */

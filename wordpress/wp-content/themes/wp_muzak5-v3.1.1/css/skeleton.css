@@ -69,6 +69,7 @@
     .container .offset-by-fourteen              { padding-left: 840px; }
     .container .offset-by-fifteen               { padding-left: 900px; }
 
+    .container header#header.group              {width: 100%;}
 
 /* #Clearing
 ================================================== */

@@ -6,7 +6,8 @@
 /* GLOBAL: #Typography
 ================================================== */
 	h1, h2, h3, h4, h5, h6 { color: #A5A4A4; }
-	#footer h3.widget-title	{ color:#b3b3b3; }	
+	#footer h3.widget-title	{ color:#A5A4A4; }	
+	h3.widget-title { background: #141313; border-left: 4px solid #A54646;}
 	strong { color: #fff; }
 	pre { background: #333; }
 	abbr, acronym, dfn { border-bottom: 1px dotted #666; }
@@ -14,6 +15,7 @@
 	blockquote { border-left: 3px solid #ddd; }
 	blockquote cite { color: #ddd; }
 	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+	p {color: #848383;}
 
 
 /* GLOBAL: #Links
@@ -105,24 +107,25 @@
 
 /* GLOBAL: #Header
 ================================================== */
-	.section-title { background: #A54646; background: rgba(206,157,92,0.9); }
+
+	.section-title { background: #141313; border-left: 5px solid #A54646;  }
 	
 
 /* GLOBAL: #Footer
 ================================================== */
-	#footer-wrap { background: none;}
-	#footer { border-top:solid 5px #A54646; }
+	#footer-wrap { background: #000;}
+	#footer { }
 	
 
 /* GLOBAL: #Widgets
 ================================================== */
-	.sub-head { color:#bebebe; }
-	.main-head { color:#fff; }
+	.sub-head { color:#A54646; }
+	.main-head { color:#5B5A5A; }
 
-	a.action-btn { color:#fff; }
+	a.action-btn { color:#A54646; }
 	a.action-btn:hover { color:#fff; }	
 	.action-btn.buy, .action-btn.view { background: none;}			
-	.latest-item { border:solid 1px #3b3b3b; background: #323232; }	
+	.latest-item { border:none; background: #323232; }	
 		
 	.widget ul li { border-bottom:solid 1px #363636; }
 	
@@ -145,7 +148,7 @@
 /* MODULE: #News
 ================================================== */
 	.post { border-bottom:dotted 1px #444; }
-	.post-intro h2 a { background: #A54646; background: rgba(206,157,92,0.9); color:#fff; }
+	.post-intro h2 a { background: none; color:#848383; }
 	.post-intro h2 a:hover { background: #000; background: rgba(0,0,0,0.7); color:#A54646; }
 	.meta .post-date { color:#ccc; }
 
@@ -168,8 +171,8 @@
 	#meta-wrap { border-color:#434343; border-color: rgba(255,255,255,0.2); }
 	
 	/* tracklisting */
-	.tracklisting li { background: #232323 url(../images/bg_gradient.png) repeat-x; border:solid 1px #3c3c3c;  }
-	.tracklisting .track-no { background: #A54646 url(../images/colors/cream/bg_tour_date.png) repeat-x; }
+	.tracklisting li { background: #141313;  }
+	.tracklisting .track-no { background: #A54646; }
 	.tracklisting .track-listen { background: url(../images/bg_speaker.png) no-repeat; }
 	.tracklisting a.sm2_button { background: url(../images/icon_playback.png) no-repeat; }
 	.tracklisting a.sm2_button.sm2_playing { background-position: 0 -30px; }
@@ -193,8 +196,8 @@
 	
 /* WIDGET: #Tour Dates
 ================================================== */
-	.widget .tour-dates li, .events .tour-dates li, .widget .tour-event .tour-group { background: #141313; }
-	.tour-date { background: #A54646;}
+	.widget .tour-dates li, .widget .tour-event li,.events .tour-dates li, .widget .tour-event .tour-group { background: #141313; border: none; }
+	.tour-date { background: #A54646; color: #F4EFEF; border: none;}
 
 
 /* WIDGET: #Latest Album
@@ -206,8 +209,8 @@
 	
 /* WIDGET: #Latest Videos
 ================================================== */
-	.latest-video a span { background: url(../images/btn_play.png) no-repeat; }
-
+	.latest-video a span { background: url(../images/btn_play.png) no-repeat; border: none; }
+	.latest-item .latest-video { border: none;}
 
 /* WIDGET: #Flickr
 ================================================== */

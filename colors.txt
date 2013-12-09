@@ -1,0 +1,23 @@
+user: gem
+password: gemgemgem
+
+
+header gray: 282626
+background: 0F0E0E
+main pink: A54646
+section header background: 141313
+
+HEADER:
+	text color: B2B1B1
+	text color white: EFEFEF
+
+
+section text: A5A4A4
+section body text: 848383
+
+search bar: 282828
+
+
+calender
+	1st heading: 5B5A5A
+	date: F4EFEF

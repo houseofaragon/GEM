@@ -11,8 +11,9 @@
 				<article <?php post_class('static'); ?>>
 		
 					<div class="post-body hyphenate">
-						<?php the_post_thumbnail('ci_fullwidth', array('class' => 'scale-with-grid img-fullwidth')); ?>
 						<?php ci_e_content(); ?>
+						<?php the_post_thumbnail('ci_fullwidth', array('class' => 'scale-with-grid img-fullwidth')); ?>
+
 					</div>
 	
 					<?php comments_template(); ?> 

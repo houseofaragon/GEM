@@ -12,7 +12,7 @@ if(!defined('CI_THEME_NAME')) 		define('CI_THEME_NAME', 'muzak');
 // The following constant stores the name as it should be printed, i.e. the nice name. 
 // Spaces, special characters, etc. are allowed.
 // You should probably change that if you are white-labeling the theme.
-if(!defined('CI_THEME_NICENAME')) 	define('CI_THEME_NICENAME', 'Muzak'); 
+if(!defined('CI_THEME_NICENAME')) 	define('CI_THEME_NICENAME', 'gem'); 
 
 // Set the URL of the online documentation here. Appears on top of the CSSIgniter Settings panel as "Documentation".
 // You can set it to an empty string if you want to remove the "Documentation" link.
